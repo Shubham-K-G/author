@@ -81,4 +81,11 @@ describe('AppController (e2e)', () => {
       .expect("Add Data in the Request Body");
   });
 
+  it('/ (GET)', () => {
+    return request(app.getHttpServer())
+      .get('/')
+      .expect(200)
+      .expect('Welcome to the App');
+  });
+
 });

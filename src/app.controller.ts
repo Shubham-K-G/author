@@ -35,4 +35,9 @@ export class AppController {
     file.pipe(res);
     }
   }
+
+  @Get('/')
+  getuser() {
+    return "Welcome to the App";
+  }
 }
